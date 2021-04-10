@@ -216,8 +216,6 @@ summary(log_race3)
 hospital costs by age and gender for proper allocation of resources.
 '
 
-pal <- wes_palette("Zissou1", 100, type = "continuous")
-
 ggplot(data, aes(factor(AGE), TOTCHG)) + 
   geom_boxplot(aes(fill ='#ff6668'), show.legend = F) + 
   coord_flip() + 
